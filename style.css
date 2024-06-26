@@ -1,0 +1,1829 @@
+
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+.tudo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #F5F5F5;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 1328px;
+    height: 88px;
+    padding: 32px, 0px, 32px, 0px;
+    align-items: center;
+
+    
+}
+
+.menu__header{
+    height: 24px;
+    gap: 8px;
+    opacity: 0px;
+    display: flex;
+    align-items: center; 
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.menu__list {
+    display: flex;
+    white-space: nowrap;
+    width: 653px;
+    height: 19px;
+    gap: 32px;
+    opacity: 0px;
+    
+    
+
+}
+
+
+.menu__list__item:last-child a {
+    font-weight: bold;
+}
+
+.menu__list__item__contato {
+    display: none;
+}
+
+
+/*Sección Title*/
+.title{
+    width: 1327.690px;
+    height: 368px;
+    align-content: center;
+    margin: 25px;
+}
+
+.title__div{
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+
+}
+.title__profile{
+    order: 2;
+    height: 368px;
+    border-radius: 50%;
+    background-color: #f0f0f0; 
+    gap: 0px;
+    opacity: 0px;
+    
+}
+.title__container{
+    order: 1;
+    height: 246px;
+    gap: 24px;
+
+}
+
+.title__bio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+    line-height: 61.05px;
+    text-align: left;
+}
+
+.title__subsection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25.83px;
+    text-align: left;
+
+}
+
+
+.title__network{
+    display: flex;
+    width: 467px;  
+    height: 24px; 
+    gap: 32px;
+    
+}
+
+/*Sección About*/
+
+.about{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 5,020px;
+    gap: 32px;
+    background-color: #EAF2FD;
+
+}
+
+.about__container{
+    display: flex;
+    width: 1327.690px;
+    height: auto;
+    padding: 64px;
+    gap: 16px;
+    flex-direction: column;
+    }
+
+.about__title{
+    display: flex;
+    width: 137px;
+    height: 38px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: left;
+
+}
+
+.about__paragraph{
+    display: flex;
+    text-align: left;
+    width: 751px;
+    height: 133px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    text-align: left;
+
+}
+
+
+/*Sección Hobbies*/
+.section.skills, 
+.section.hobbies, 
+.section.academic {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;   
+    height: 1245px;
+    top: 40px;
+    gap: 88px;
+}
+
+
+
+.skills{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 1,136px;
+    height: 244px;
+    gap: 32px;
+}
+.skills__title{
+    height: 38px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: center;
+}
+
+.skills__line{
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    width: 1,136px;
+    height: 174px;
+    gap: 16px;
+}
+.skills__box{
+    display: flex;
+    width: 176px;
+    height: 174px;
+    padding: 16px;
+    gap: 8px;
+    background-color: #FFFFFF;  
+    flex-direction: column-reverse;
+
+}
+
+
+.skills__img
+{
+    width: 40px;
+    height: 37px;
+    font-family: 'Font Awesome 5 Brands';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36.8px;
+    text-align: center;
+}
+
+.skills__name{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+    text-align: left;
+    width: 144px;
+    height: 19px;
+
+}
+
+.hobbies{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 1,136px;
+    height: 244px;
+    padding: 150px;
+    gap: 32px;
+}
+.hobbies__title{
+    height: 38px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: center;
+}
+
+.hobbies__line{
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    width: 1,136px;
+    height: 174px;
+    gap: 16px;
+}
+.hobbies__box{
+    display: flex;
+    width: 176px;
+    height: 174px;
+    padding: 16px;
+    gap: 8px;
+    background-color: #FFFFFF;  
+    flex-direction: column-reverse;
+
+}
+
+
+.hobbies__img
+{
+    width: 40px;
+    height: 37px;
+    font-family: 'Font Awesome 5 Brands';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36.8px;
+    text-align: center;
+}
+
+.hobbies__name{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+    text-align: left;
+    width: 144px;
+    height: 19px;
+
+}
+
+
+/* Experiencia Académica*/
+
+
+    .academic{
+        width: 100%;
+        height: 581px;
+        gap: 32px;
+        background-color: #EAF2FD;
+        
+    }
+    .academic__title{
+        text-align: center;
+        height: 39px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 37.57px;
+        text-align: center;
+
+    }
+
+    .academic__courses{
+        display: flex;
+        justify-content: center;
+        width: 1,136px;
+        height: 347px;
+        gap: 16px;
+    }
+
+    .academic__courses__box{
+        width: 368px;
+        height: 347px;
+        gap: 8px;
+        text-align: left;
+    }
+
+    .academic__courses__list
+    {
+        width: 368px;
+        height: 347px;
+        gap: 8px;
+        
+    }
+
+    .academic__courses__item__img{
+        display: flex;
+        width: 368px;
+        height: 286px;
+        justify-content: center;
+        align-items: center;
+        padding: 16px, 0px ;
+        gap: 10px;
+        opacity: 0px;
+        background-color: #FFFFFF;
+    }
+
+    .academic__courses__item__img img{
+        display: flex;
+        width: 192px;
+        height: 130px;
+        gap: 0px;
+        opacity: 0px;
+        
+    }
+
+    .academic__courses__item__title{
+        height: 35px;
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        text-align: left;
+    }
+
+    .academic__courses__item__subtitle{
+        display: flex;
+        height: 19px;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.78px;
+        text-align: left;
+        
+    }
+
+/* experiencia*/
+    .experience{
+        display: flex;
+        width: 100%;
+        height:  1,886px;
+        gap: 32px;
+        opacity: 0px;        
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .experience__section__title{
+        justify-content: center;
+        text-align: center;
+        height: 38px;
+        font-family: Raleway;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 37.57px;
+        text-align: center;
+
+    }
+
+    .experience__section__title h2 {
+        background: #464646;
+    }
+    
+    .experiencie__box{
+        display: flex;
+        width: 1,136px;
+        height: 406px;
+        gap: 16px;
+        opacity: 0px;
+        align-items: center;
+        justify-content: center;
+        
+        
+
+    }
+
+    .experience__info{
+        width: 368px;
+        height: 112px;
+        gap: 8px;
+        opacity: 0px;
+        
+    }
+
+    .experience__title{
+        width: 368px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        text-align: left;
+        
+
+    }
+
+    
+    .experience__text{
+        width: 368px;
+        height: 19px;
+        gap: 0px;
+        opacity: 0px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.78px;
+        text-align: left;
+
+    }
+
+    .experience__description{
+        display: flex;
+        height: 51px;
+        gap: 16px;
+        flex-direction: row;
+
+    }
+    .experience__repo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 116px;
+        gap: 10px;
+        border: 1px solid #2A7AE4;
+    }
+    .experiencia__botao--repo{
+        font-family: Raleway;
+        font-size: 16px;
+        border: 0;
+
+    }
+
+    .experience__demo{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 116px;
+        gap: 10px;
+        background: #2A7AE4;
+
+    }
+
+    .experience__botao--demo{
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.78px;
+        text-align: left;        
+        background: #2A7AE4;
+        border: 0;
+        color: white;
+    }
+    .experiencie__box:nth-child(3),
+    .experiencie__box:nth-child(5) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+
+/*Contacto*/
+
+section.formcontato{
+
+    text-align: center;
+    justify-items: center;
+    flex-direction: column;
+    height: 788px;
+    padding: 32px;
+    background-color: #EAF2FD;
+}
+.formcontato__contacto{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 16px;
+    opacity: 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.formcontato__text{
+    height: 596px;
+    gap: 32px;
+    opacity: 0px;
+    text-align: left;
+}
+
+.formcontato__title{
+    width: 141px;
+    height: 38px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: left;
+
+}
+
+.formcontato__subtext{
+    width: 656px;
+    height: 38px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+    text-align: left;
+
+    
+}
+.formcontato__form{
+    display: flex;
+    width: 656px;
+    height: 397px;
+    gap: 32px;
+    opacity: 0px;
+    flex-direction: column;
+    
+}
+.formcontato__input{
+    width: 656px;
+height: 56px;
+gap: 8px;
+opacity: 0px;
+
+}
+
+.formcontato__botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 144px;
+    height: 51px;
+    gap: 10px;
+    opacity: 0px;background: #2A7AE4;
+    border: 0;
+
+}
+/*footeer*/
+
+.footer{
+    display: flex;
+    width: 1,440px;
+    height: 102px;
+    padding: 32px ;
+    gap: 10px;
+    justify-content: center;
+}
+.footer__rodape{
+    width: 400px;
+    height: 38px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+    text-align: center;
+
+}
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+
+@media (max-width:769px) {
+    .tudo{
+        width: 768px;
+        height: 4379px;
+        top: -289px;
+        left: 1450px;
+        gap: 0px;
+        opacity: 0px;
+        background: #F5F5F5;
+
+        
+
+    }
+    /* Menú */
+    .menu {
+        display: flex; /* Asegúrate de que el contenedor principal use flexbox */
+        justify-content: space-between; /* Distribuye el espacio entre los elementos */
+        align-items: center; /* Centra los elementos verticalmente */
+        width: 728px;
+        height: 56px; 
+        padding: 16px 32px;
+    }
+
+    .menu__title {
+        /* Ajusta la anchura según sea necesario */
+        height: 19px;
+        opacity: 1; /* Asegúrate de que sea visible */
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.78px;
+        text-align: left;
+    }
+
+    .menu__header {
+        /* Ajusta la anchura según sea necesario */
+        height: 24px;
+        opacity: 1; /* Asegúrate de que sea visible */
+        margin-left: 20px; /* Ajusta el margen según sea necesario */
+    }
+
+    .menu__list {
+        display: none; /* Ocultar la lista, si es necesario */
+    }
+
+    .menu__list__item__contato {
+        display: block;
+        /* Ajusta la anchura según sea necesario */
+        height: 19px;
+        opacity: 1; /* Asegúrate de que sea visible */
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.78px;
+        text-align: left;
+        margin-right: 0px; /* Reduce el margen derecho */
+    }
+
+    /*title*/
+    .title{
+        width: 768px;
+        height: 210px;
+        padding: 32px 0px 0px 0px;
+        gap: 32px;
+        opacity: 0px;
+
+    }
+    .title__profile{
+        width: 146px;
+        height: 146px;
+        gap: 0px;
+        opacity: 0px;
+
+    }
+    .title__container{
+        width: 524px;
+        height: 130px;
+        gap: 8px;
+        opacity: 0px;
+    }
+
+    .title__bio{
+        width: 524px;
+        height: 38px;
+        gap: 0px;
+        opacity: 0px;font-family: Raleway;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.78px;
+        text-align: left;
+        
+        
+
+    }
+
+    .title__subsection{
+        width: 524px;
+        height: 38px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.78px;
+        text-align: left;
+
+    }
+    .title__network__item{
+        width: 467px;
+        height: 24px;
+        gap: 32px;
+        opacity: 0px;
+
+    }
+
+    
+    .about{
+        width: 768px;
+        height: 286px;
+        gap: 10px;
+        padding:  32px;
+        opacity: 0px;
+    }
+    .about__container{
+        display: flex;
+        width: 704px;
+        height: auto;
+        gap: 16px;
+        opacity: 0px;
+        justify-content: center;
+        padding: 0px;
+    }
+    .about__title{
+        width: 94px;
+        height: 26px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        text-align: left;
+    }
+    .about__paragraph{
+        width: 704px;
+        height: 112px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.44px;
+        text-align: left;
+
+    }
+    
+    
+/*Skills*/
+
+
+    .skills{
+        display: flex;
+        align-items: center;
+        width: 768px;
+        height: auto;
+        padding: 32px ;
+        gap: 32px;
+        opacity: 0px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .skills__title{
+        width: 57px;
+        height: 26px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        text-align: center;
+
+    }
+
+    .skills__line{
+        width: 704px;
+        height: 118px;
+        gap: 16px;
+        opacity: 0px;
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+    .skills__box{
+        width: 224px;
+        height: 118px;
+        padding: 16px 0px 0px 0px;
+        gap: 8px;
+        opacity: 0px;
+        background-color: #FFFFFF;
+
+    }
+    .skills__img{
+        width: 24px;
+        height: 37px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Font Awesome 5 Brands;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 36.8px;
+        text-align: center;
+
+    }
+    .skills__name{
+        width: 192px;
+        height: 19px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.78px;
+        text-align: left;
+
+    }
+
+/*Hobbies*/
+.hobbies {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 768px;
+    height: auto; 
+    padding: 32px;
+    gap: 32px;
+    margin-top: 15%; 
+    margin-bottom: 15%; 
+}
+
+.hobbies__title {
+    width: 88px;
+    height: 26px;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+    text-align: center;
+}
+
+.hobbies__line {
+    width: 704px;
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobbies__box{
+    width: 224px;
+    height: 118px;
+    padding: 16px 0px 0px 0px;
+    gap: 8px;
+    opacity: 0px;
+
+}
+
+/*Formación Académica*/
+
+    .academic{
+        display: flex;
+        flex-direction: column; 
+        width: 768px;
+        height: auto;
+        padding: 64px ;
+        gap: 32px;
+        opacity: 0px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2%; 
+        background: #EAF2FD;
+        margin: 15px;
+        
+
+    }
+    .academic__title{
+        width: 233px;
+        height: 26px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        text-align: center;
+        flex-direction: row ;
+        white-space: nowrap;
+    }
+    .academic__courses{
+        width:  704px;
+        height: 169px;
+        opacity: 0px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .academic__courses__box{
+        width: 704px;
+        height: auto;
+        gap: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .academic__courses__list{
+        width: auto;
+        height: 169px;
+        gap: 8px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0%;
+
+    }
+    .academic__courses__list ul{
+        list-style-type: none;
+
+    }
+    .academic__courses__item__img {
+        width: 224px;
+        height: 118px;
+        padding: 16px 0px 0px 0px;
+        gap: 10px;
+        opacity: 0px;
+
+    }
+    .academic__courses__item__img img{
+        width: 84px;
+        height: 58px;
+        gap: 0px;
+        opacity: 0px;
+
+    }
+    
+    .academic__courses__item__title{
+        width: 224px;
+        height: 19px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.78px;
+        text-align: left;
+
+    }
+    .academic__courses__item__subtitle{
+        width: 78px;
+        height: 16px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.44px;
+        text-align: left;
+        flex-direction: row;
+
+    }
+/*Experiencia Profesional*/
+
+    .experience{
+        width: 768px;
+        height: 2,017px;
+        padding: 32px 0px 0px 0px;
+        gap: 16px;
+        opacity: 0px;
+        
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+    .experience__title{
+        width: 248px;
+        height: 26px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        text-align: center;                
+
+    }
+
+    .experiencie__box{
+        width: 704px;
+        height: 580px;
+        gap: 64px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    
+    .experiencie__box:nth-child(3),
+    .experiencie__box:nth-child(5) {
+        display: flex;
+        flex-direction: column;
+    }
+    .experience__img {
+        width: 704px;
+        height: 320px;
+        gap: 0px;
+        opacity: 0px;
+        
+    }
+    .experience__info{
+        width: 704px;
+        height: 91px;
+        gap: 8px;
+        opacity: 0px;
+        
+
+    }
+    .experience__title{
+        width: 704px;
+        height: 19px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.78px;
+        text-align: left;
+
+    }
+    .experience__text{
+        width: 704px;
+        height: 16px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.44px;
+        text-align: left;
+
+    }
+    .experience__description{
+        width: 560px;
+        height: 40px;
+        gap: 16px;
+        opacity: 0px;
+
+    }
+    .experience__repo{
+        width: 108px;
+        height: 40px;
+        padding: 12px 16px 12px 16px;
+        gap: 10px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+
+    }
+
+    .experience__demo{
+        width: 96px;
+        height: 40px;
+        padding: 12px 16px 12px 16px;
+        gap: 10px;
+        opacity: 0px;
+
+    }
+
+    section.formcontato{
+        width: 768px;
+        height: 500px;
+        gap: 0px;
+        opacity: 0px;
+        background: #EAF2FD;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .formcontato__contacto{
+        width: 704px;
+        height: 573px;
+        gap: 16px;
+        opacity: 0px;
+
+    }
+    .formcontato__img{
+        display: none;
+    }
+
+    .formcontato__title{
+        width: 656px;
+        height: 72px;
+        gap: 8px;
+        opacity: 0px;
+
+    }
+    .formcontato__title{
+        width: 97px;
+        height: 26px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        text-align: left;
+
+    }
+    .formcontato__subtext{
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.78px;
+        text-align: left;
+        height: auto;
+
+    }
+
+    .formcontato__form{
+        width: 704px;
+        height: 397px;
+        gap: 32px;
+        opacity: 0px;
+
+    }
+    .formcontato__input{
+        width: 704px;
+        height: 56px;
+        gap: 8px;
+        opacity: 0px;
+
+    }
+    .formcontato__textarea{
+        width: 704px;
+        height: 133px;
+        padding: 16px 0px 0px 0px;
+        gap: 4px;
+        border-radius: 4px 0px 0px 0px;
+        opacity: 0px;
+
+    }
+    .formcontato__botao{
+        width: 133px;
+        height: 40px;
+        padding: 12px 16px 12px 16px;
+        gap: 10px;
+        opacity: 0px;
+        
+
+    }
+
+    .footer{
+        width: 768px;
+        height: 102px;
+        padding: 32px 0px 0px 0px;
+        gap: 10px;
+        opacity: 0px;
+        background: #FFFFFF;
+
+
+    }
+
+    .footer__rodape{
+        width: 400px;
+        height: 38px;
+        gap: 0px;
+        opacity: 0px;
+
+    }
+}
+
+
+
+/*Mobile*/
+@media (max-width: 426px) {
+    .tudo {
+        width: 426px; 
+        height: auto; 
+        gap: 0; 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 0; 
+        margin: 0; 
+        box-sizing: border-box; 
+        background: #F5F5F5;
+
+    }
+    .menu{
+        width: 360px;
+        height: 56px;
+        padding: 16px 0px 0px 0px;
+        gap: 10px;
+        justify-items: space-between;
+        opacity: 0px;
+        }
+    .menu__header{
+        width: 134px;
+        height: 24px;
+        gap: 8px;
+        margin-left: 0px;
+        display: flex;
+    }
+    .menu__title{
+        width: 200px;
+        height: auto;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.78px;
+        text-align: left;
+
+    }
+    .menu__list__item__contato{
+        width: 200px;
+        height: 16px;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.44px;
+        text-align: left;
+
+    }
+/*Titulo*/
+    .title{
+        width: 360px;
+        height: 294px;
+        padding: 0px;
+        gap: 16px;
+        opacity: 0px;
+
+    }
+    .title__div{
+        width: 360px;
+        height: 294px;
+        gap: 16px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .title__profile{
+        width: 98px;
+        height: 98px;
+        gap: 0px;
+        opacity: 0px;
+
+    }
+
+    .title__container{
+        width: 328px;
+        height: 148px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .title__bio{
+        width: 328px;
+        height: 52px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        text-align: left;
+
+    }
+
+    .title__subsection{
+        width: 328px;
+        height: 48px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.44px;
+        text-align: left;
+
+    }
+
+    .title__network{
+        width: 360px;
+        height: 16px;
+        gap: 8px;
+        opacity: 0px;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .title__network__item{
+        width: 100px;
+        height: 16px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16.44px;
+        text-align: left;
+
+
+    }
+/* sobre mi */
+    .about{
+        width: 426px;
+        height: auto;
+        gap: 10px;
+        opacity: 0px;
+        margin-top: 20px;
+        background: #EAF2FD;
+
+    }
+    .about__container{
+        width: 328px;
+        height: auto;
+        gap: 1px;
+        opacity: 0px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .about__title{
+        width: 94px;
+        height: 26px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        text-align: left;
+
+    }
+    .about__paragraph{
+        width: 328px;
+        height: 208px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.44px;
+        text-align: left;
+
+    }
+/*Skills*/
+    .skills{
+        width: 360px;
+        height: 508px;
+        padding: 16px 0px 0px 0px;
+        gap: 32px;
+        opacity: 0px;
+
+    }
+    .skills__title{
+        width: 57px;
+        height: 26px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        text-align: center;                
+    }
+    .skills__line{
+        width: 328px;
+        height: 118px;
+        gap: 16px;
+        opacity: 0px;
+
+    }
+    .skills__box{
+        width: 156px;
+        height: 118px;
+        padding: 16px 0px 0px 0px;
+        gap: 8px;
+        opacity: 0px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .skills__box ul{
+        display: flex;
+        padding: 16px ;
+        flex-direction: column;
+    }
+/*Hobbies*/
+    .hobbies{
+        width: 360px;
+        height: 508px;
+        padding: 16px 0px 0px 0px;
+        gap: 32px;
+        opacity: 0px;
+
+    }
+    .hobbies__title{
+        width: 88px;
+        height: 26px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        text-align: center;
+
+    }
+    .hobbies__line{
+        width: 328px;
+        height: 118px;
+        gap: 16px;
+        opacity: 0px;
+
+    }
+    .hobbies__box{
+        width: 156px;
+        height: 118px;
+        gap: 8px;
+        opacity: 0px;
+
+    }
+    .hobbies__box ul{
+        padding: 16px;
+    }
+    .hobbies__img{
+        width: 124px;
+        height: auto;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.78px;
+        text-align: left;
+
+    }
+    .hobbies__name{
+        width: 124px;
+    height: 19px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+    text-align: left;
+
+    }
+/*Formación Académica*/
+    .academic{
+        width:100%;
+        height: 661px;
+        padding: 32px 0px 0px 0px;
+        gap: 32px;
+        background: #EAF2FD;
+
+
+    }
+    .academic__title{
+        width: 233px;
+        height: 26px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        text-align: center;
+
+    }
+    .academic__courses{
+        width: 296px;
+        height: 539px;
+        gap: 16px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .academic__courses__box{
+        width: 296px;
+        height: 169px;
+        gap: 8px;
+        opacity: 0px;
+
+    }
+    .academic__courses__list{
+        width: 296px;
+        height: 69px;
+        gap: 8px;
+        opacity: 0px;
+
+    }
+    .academic__courses__item__img{
+        width: 296px;
+        height: 118px;
+        padding: 16px 0px 0px 0px;
+        gap: 10px;
+        opacity: 0px;
+
+    }
+    
+    .academic__courses__item__img img{
+        width: 84px;
+        height: 58px;
+        gap: 0px;
+        opacity: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+    }
+    .academic__courses__item__title{
+        width: auto;
+        height: 19px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.78px;
+        text-align: left;
+
+    }
+    .academic__courses__item__title h4{
+        margin: 0px;
+    }
+
+    .academic__courses__item__subtitle{
+        width: 105px;
+        height: 16px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.44px;
+        text-align: left;
+
+    }
+    .academic__courses__item__subtitle p{
+        margin: 0px;
+    }
+/*Experiencia Profesional*/
+    .experience{
+        width: 426px;
+        height: 1,215px;
+        opacity: 0px;
+        gap: 30px;
+        padding: 0px;
+
+
+    }
+    .experience__section__title{
+        width: 248px;
+        height: 26px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        text-align: center;
+
+    }
+    .experiencie__box{
+        width: 296px;
+        height: 251px;
+        opacity: 0px;
+        gap: 0px;
+        padding: 15px;
+        
+
+    }
+    .experience__img{
+        width: 296px;
+        height: 144px;
+        gap: 0px;
+        opacity: 0px;        
+    }
+    .experience__info{
+        width: 296px;
+        height: 91px;
+        gap: 8px;
+        opacity: 0px;
+
+    }
+    .experience__title{
+        width: 100%;
+        height: auto;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.78px;
+        text-align: left;
+
+    }
+    .experience__text{
+        width: 296px;
+        height: 16px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.44px;
+        text-align: left;
+
+    }
+    .experience__description{
+        width: 296px;
+        height: 40px;
+        gap: 16px;
+        opacity: 0px;
+
+    }
+    .experience__repo{
+        width: 108px;
+        height: 40px;
+        gap: 10px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        padding: 0px;
+        border: 1px solid #2A7AE4        
+    }
+    .experiencia__botao--repo{
+        width: 76px;
+        height: 16px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16.44px;
+        text-align: left;
+        color: #2A7AE4;
+
+    }
+    .experience__demo{
+        width: 96px;
+        height: 40px;
+        padding: 0px;
+        gap: 10px;
+        opacity: 0px;
+        
+
+    }
+    .experience__botao--demo{
+        width: auto;
+        height: 16px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16.44px;
+        text-align: left;
+
+    }
+/*Contacto*/
+section.formcontato{
+        width: 425px;
+        height: 750px;
+        gap: 10px;
+        opacity: 0px;        
+        padding: 0px;
+        background: #EAF2FD;
+        display: flex;
+        justify-content: flex-start;
+
+    }
+    .formcontato__contacto{
+        width: 425px;
+        height: 675px;
+        gap: 10px;
+        background: #EAF2FD;
+
+    }
+    .formcontato__form{
+        
+        width: 360px;
+        height: 675px;
+    }
+    .formcontato__text{
+        width: 296px;
+        height: 611px;
+        gap: 16px;
+        opacity: 0px;
+        
+    }
+    .formcontato__title{
+        width: 97px;
+        height: 26px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        text-align: left;
+
+    }
+    .formcontato__subtext{
+        width: 296px;
+        height: auto;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.78px;
+        text-align: left;
+
+    }
+    .formcontato__input{
+        width: 296px;
+        height: 56px;
+        gap: 8px;
+        opacity: 0px;
+
+    }
+    .formcontato__textarea{
+        width: 296px;
+        height: 133px;
+        padding: 16px 0px 0px 0px;
+        gap: 4px;
+        border-radius: 4px 0px 0px 0px;
+        opacity: 0px;
+
+    }
+/*Footer*/
+    .footer{
+        width: 425px;
+        height: 102px;
+        padding: 32px 0px 0px 0px;
+        gap: 10px;
+        opacity: 0px;
+
+    }
+    .footer__rodape{
+        width: 229px;
+        height: 38px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.78px;
+    }
+}
